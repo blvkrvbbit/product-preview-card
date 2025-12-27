@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("./reset.css");
+
+:root {
+  --black: #1c232b;
+  --grey: #6c7289;
+  --cream: #f2eae2;
+  --white: #fff;
+  --green-500: #3d8168;
+  --green-700: #1a4032;
+  --spacing-500: 4rem;
+  --spacing-400: 3.2rem;
+  --spacing-300: 2.4rem;
+  --spacing-200: 1.6rem;
+  --spacing-100: 0.8rem;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--cream);
+}
+
+.text-preset-1 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.text-preset-2 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 110%;
+  letter-spacing: 0;
+}
+
+.text-preset-3 {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 160%;
+  letter-spacing: 0;
+}
+
+.text-preset-4 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 120%;
+  letter-spacing: 0.5;
+}
+
+.text-preset-5 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+.btn {
+  color: #fff;
+  display: block;
+  background: var(--green-500);
+  border: none;
+  width: 100%;
+  padding: 1.75rem 0 1.75rem 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background 0.8s ease;
+}
+
+.card {
+  margin: 8rem 1.6rem;
+  border-radius: 0.8rem;
+}
+
+.card img {
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.product {
+  padding: 3.2rem;
+  background: #fff;
+}
+
+.category {
+  text-transform: uppercase;
+  color: var(--grey);
+}
+
+.title,
+.category {
+  margin-bottom: var(--spacing-300);
+}
+
+.description {
+  color: var(--grey);
+  margin-bottom: var(--spacing-300);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.price ins {
+  text-decoration: none;
+  color: var(--green-500);
+  margin-right: var(--spacing-200);
+}
+
+.price del {
+  color: var(--grey);
+}
+
+.btn:hover {
+  background: var(--green-700);
+}
+
+.btn div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.btn div img {
+  overflow: visible;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    display: flex;
+    max-width: 60rem;
+  }
+  .card img {
+    display: block;
+    max-width: 30rem;
+    border-radius: 0.8rem 0 0 0.8rem;
+  }
+
+  .card .product {
+    border-radius: 0 0.8rem 0.8rem 0;
+    max-width: 30rem;
+    height: 100%;
+  }
+}
